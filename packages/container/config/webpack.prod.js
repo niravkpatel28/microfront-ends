@@ -13,12 +13,12 @@ const prodConfig = {
   plugins: [
     new ModuleFederationPlugin({
       name: "container",
-      remotes:{
-          marketingApp: `marketing@${domain}/marketing/remoteEntry.js`
-      }
+      remotes: {
+        marketingApp: `marketing@${domain}/marketing/remoteEntry.js`,
+      },
       shared: packageJson.dependencies,
     }),
   ],
 };
 
-module.exports = merge(commonConfig,prodConfig);
+module.exports = merge(commonConfig, prodConfig);
