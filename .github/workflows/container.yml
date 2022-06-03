@@ -13,9 +13,9 @@ defaults:
 
 jobs:
   build:
-    # runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     # runs-on: ubuntu-16.04
-    runs-on: amazonlinux
+    # runs-on: amazonlinux
 
     steps:
       - uses: actions/checkout@v2
