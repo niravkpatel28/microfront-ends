@@ -9,7 +9,9 @@ import { BrowserRouter } from "react-router-dom";
 import MarketingApp from "./components/MaketingApp";
 import Header from "./components/Header";
 
-const generateClassName = createGenerateClassName();
+const generateClassName = createGenerateClassName({
+  productionPrefix: "co",
+});
 export default () => {
   return (
     <StylesProvider generateClassName={generateClassName}>
